@@ -1,0 +1,77 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-image: url(math-zarpq292tmb3w.jpg);
+  background-size: cover;
+  /* background: linear-gradient(
+    to right,
+    rgb(40, 40, 126, 0.5),
+    rgb(43, 43, 108)
+  ); */
+}
+
+.container {
+  justify-content: center;
+  align-content: center;
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+  box-shadow: 0 10px 20px 3px #c8fbfe;
+}
+
+.container button {
+  cursor: pointer;
+  font-size: 2rem;
+  border: 1px solid black;
+  background-color: rgb(49, 48, 48);
+  color: #000;
+}
+
+.container button:hover {
+  background-color: white;
+}
+
+.big {
+  grid-column: span 2;
+}
+
+.last {
+  grid-column: 1 / -1;
+  background-color: rgb(82, 82, 114, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding: 1rem;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.div1 {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.div2 {
+  font-size: 1.5rem;
+}
+
+.container button.erase {
+  background-color: rgb(223, 235, 245, 0.7);
+}
+
+.container button.puple {
+  background-color: rgb(223, 235, 245, 0.7);
+}
+
+.container button .erase .puple:hover {
+  background-color: white;
+}
